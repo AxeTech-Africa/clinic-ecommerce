@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Cotton Tee",
+    "imagePrimary": "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/76/64/79/c8/be/v1_E11/E1184YGD.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=4f6f2875ea4d7906ecbba8a18ee349fabf01f36cb62bf5e7af9acbf75f0344c5",
+    "price": 25,
+    "isNew": true,
+    "description": "A comfortable and versatile classic cotton t-shirt for everyday wear.",
+    "oldPrice": 30,
+    "longDescription": "This classic cotton tee is made from 100% premium cotton for ultimate comfort. Perfect for everyday wear.",
+    "colors": ["Red", "Blue", "Green"],
+    "sizes": ["S", "M", "L"],
+    "category": "shirts",
+    "gender": "women",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+    
+  },
+  {
+    "id": 2,
+    "name": "Stylish Denim Jeans",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 75,
+    "description": "Modern fit denim jeans crafted for style and durability.",
+    "longDescription": "These stylish denim jeans feature a modern fit that is both comfortable and flattering. Made from high-quality denim, they are built to last and perfect for any casual occasion.",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Dark Blue", "Light Blue", "Black"],
+    "category": "pants",
+    "gender": "women",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Leather Ankle Boots",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 120,
+    "isNew": true,
+    "description": "Premium leather ankle boots offering both fashion and comfort.",
+    "longDescription": "Step out in style with these premium leather ankle boots. Crafted with attention to detail, they provide both a fashionable look and all-day comfort. Ideal for various outfits and occasions.",
+    "colors": ["Black", "Brown"],
+    "sizes": ["S", "M", "L"],
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sport Running Shoes",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 90,
+    "oldPrice": 110,
+    "description": "High-performance running shoes designed for optimal comfort and support.",
+    "longDescription": "Achieve your fitness goals with these high-performance sport running shoes. Engineered for optimal comfort and support, they feature advanced cushioning and a breathable design for a superior running experience.",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Black", "White", "Blue"],
+    "category": "pants",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Elegant Silk Scarf",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 40,
+    "description": "A luxurious silk scarf that adds a touch of elegance to any outfit.",
+    "longDescription": "Elevate your style with this elegant silk scarf. Made from high-quality silk, it feels luxurious against the skin and adds a sophisticated touch to any ensemble. Available in various colors.",
+    "colors": ["Ivory", "Navy", "Maroon"],
+    "sizes": ["S", "M", "L"],
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+
+  },
+  {
+    "id": 6,
+    "name": "Casual Backpack",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 55,
+    "isNew": true,
+    "description": "A practical and stylish backpack perfect for everyday use and travel.",
+    "longDescription": "Carry your essentials in style with this practical and casual backpack. Featuring multiple compartments and durable material, it's ideal for everyday use, school, or short trips.",
+    "colors": ["Grey", "Black", "Teal"],
+    "sizes": ["S", "M", "L"],
+    "category": "pants",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+
+  },
+  {
+    "id": 7,
+    "name": "Wireless Bluetooth Headphones",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 80,
+    "description": "High-quality wireless Bluetooth headphones with noise-canceling features.",
+    "longDescription": "Immerse yourself in your favorite music with these high-quality wireless Bluetooth headphones. Featuring active noise cancellation and a comfortable over-ear design, they provide an exceptional listening experience.",
+    "colors": ["Black", "Silver"],
+    "sizes": ["S", "M", "L"],
+    "category": "shirts",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ceramic Coffee Mug",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 15,
+    "oldPrice": 20,
+    "description": "A durable and stylish ceramic coffee mug for your daily brew.",
+    "longDescription": "Enjoy your morning coffee or tea in this durable and stylish ceramic mug. With a comfortable handle and a classic design, it's perfect for everyday use.",
+    "colors": ["White", "Blue", "Green"],
+    "sizes": ["S", "M", "L"],
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lightweight Running Jacket",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 65,
+    "description": "Breathable and lightweight running jacket for all seasons.",
+    "longDescription": "Stay comfortable during your runs with this breathable and lightweight running jacket. Designed for all seasons, it offers protection from wind and light rain without restricting movement.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "Navy", "Red"],
+    "category": "shirts",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Designer Sunglasses",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 115,
+    "description": "Stylish designer sunglasses with UV protection.",
+    "longDescription": "Protect your eyes in style with these designer sunglasses. Featuring a fashionable frame and UV400 lenses, they offer both a trendy look and essential eye protection.",
+    "colors": ["Black", "Tortoise Shell"],
+    "sizes": ["S", "M", "L"],
+    "category": "shirts",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Cotton Blend Socks (Pack of 3)",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 12,
+    "isNew": true,
+    "description": "Comfortable cotton blend socks for everyday wear.",
+    "longDescription": "This pack includes three pairs of comfortable cotton blend socks. Perfect for everyday wear, they offer a soft feel and good breathability.",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Grey", "Navy", "Black"],
+    "category": "full-outfit",
+    "gender": "women",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Digital Smartwatch",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 150,
+    "description": "Feature-rich digital smartwatch with fitness tracking.",
+    "longDescription": "Stay connected and track your activity with this feature-rich digital smartwatch. It includes fitness tracking, heart rate monitoring, notifications, and more.",
+    "colors": ["Space Grey", "Rose Gold"],
+    "sizes": ["S", "M", "L"],
+    "category": "shirts",
+    "gender": "women",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Wool Blend Beanie",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 28,
+    "description": "Warm and cozy wool blend beanie for cold weather.",
+    "longDescription": "Keep warm during chilly days with this cozy wool blend beanie. Its comfortable fit and stylish design make it a winter essential.",
+    "colors": ["Charcoal", "Olive", "Wine"],
+    "sizes": ["S", "M", "L"],
+    "category": "pants",
+    "gender": "women",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Leather Belt",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 35,
+    "description": "Classic genuine leather belt for men.",
+    "longDescription": "Complete your look with this classic genuine leather belt for men. Durable and stylish, it's a versatile accessory for both casual and formal wear.",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Brown", "Black"],
+    "category": "shirts",
+    "gender": "women",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Travel Duffel Bag",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 70,
+    "oldPrice": 85,
+    "description": "Spacious and durable travel duffel bag.",
+    "longDescription": "Pack for your next adventure with this spacious and durable travel duffel bag. Featuring multiple compartments and sturdy construction, it's ideal for weekend getaways or longer trips.",
+    "colors": ["Black", "Khaki"],
+    "sizes": ["S", "M", "L"],
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Stainless Steel термокружка",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 30,
+    "description": "Insulated stainless steel термокружка for hot and cold drinks.",
+    "longDescription": "Keep your beverages at the perfect temperature with this insulated stainless steel термокружка. Ideal for coffee, tea, or cold drinks on the go.",
+    "colors": ["Silver", "Matte Black"],
+    "sizes": ["S", "M", "L"],
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Fitness Yoga Mat",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 22,
+    "isNew": true,
+    "description": "Non-slip fitness yoga mat for comfortable workouts.",
+    "longDescription": "Enhance your yoga or workout routine with this non-slip fitness yoga mat. Its comfortable thickness provides excellent cushioning and stability.",
+    "colors": ["Purple", "Blue", "Pink"],
+    "sizes": ["S", "M", "L"],
+    "oldPrice": 30,
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Corduroy Jacket",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 95,
+    "description": "Stylish corduroy jacket for a retro look.",
+    "longDescription": "Add a touch of retro style to your wardrobe with this stylish corduroy jacket. Its comfortable fabric and classic design make it a versatile outerwear option.",
+    "colors": ["Brown", "Navy", "Olive"],
+    "sizes": ["S", "M", "L"],
+    "oldPrice": 120,
+    "category": "full-outfit",
+    "isNew": true,
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Reading Glasses",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+    "price": 18,
+    "description": "Comfortable and stylish reading glasses.",
+    "longDescription": "Enjoy clear vision with these comfortable and stylish reading glasses. Lightweight and durable, they are perfect for reading or close-up work.",
+    "strengths": ["+1.00", "+1.50", "+2.00", "+2.50"],
+    "category": "full-outfit",
+    "colors": ["Black", "Brown"],
+    "sizes": ["S", "M", "L"],
+    "oldPrice": 25,
+    "isNew": true,
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Reusable Shopping Bags (Set of 5)",
+    "imagePrimary": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-12-36-43-utc.webp",
+    "price": 15,
+    "description": "Eco-friendly reusable shopping bags.",
+    "longDescription": "Reduce plastic waste with this set of five eco-friendly reusable shopping bags. Durable and spacious, they are perfect for groceries and everyday shopping.",
+    "colors": ["Assorted Prints"],
+    "sizes": ["S", "M", "L"],
+    "oldPrice": 20,
+    "isNew": true,
+    "category": "full-outfit",
+    "gender": "men",
+    "imageGallery": [
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp"
+    ]
+  }
+]

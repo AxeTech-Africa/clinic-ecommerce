@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Classic White Shirt",
+      "image1": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-24-18-30-36-utc.webp",
+      "image2": "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
+      "price": 220,
+      "category": "shirts"
+    },
+    {
+      "id": 2,
+      "name": "Blue Denim Shirt",
+      "image1": "images/product/shirt2_front.jpg",
+      "image2": "images/product/shirt2_back.jpg",
+      "price": 250,
+      "category": "shirts"
+    },
+    {
+      "id": 3,
+      "name": "Striped Dress Shirt",
+      "image1": "images/product/shirt3_front.jpg",
+      "image2": "images/product/shirt3_back.jpg",
+      "price": 280,
+      "category": "shirts"
+    },
+    {
+      "id": 4,
+      "name": "Linen Casual Shirt",
+      "image1": "images/product/shirt4_front.jpg",
+      "image2": "images/product/shirt4_back.jpg",
+      "price": 230,
+      "category": "shirts"
+    },
+    {
+      "id": 5,
+      "name": "Plaid Flannel Shirt",
+      "image1": "images/product/shirt5_front.jpg",
+      "image2": "images/product/shirt5_back.jpg",
+      "price": 260,
+      "category": "shirts"
+    },
+    {
+      "id": 6,
+      "name": "Slim Fit Black Pants",
+      "image1": "images/product/pant1_front.jpg",
+      "image2": "images/product/pant1_back.jpg",
+      "price": 300,
+      "category": "pants"
+    },
+    {
+      "id": 7,
+      "name": "Cargo Utility Pants",
+      "image1": "images/product/pant2_front.jpg",
+      "image2": "images/product/pant2_back.jpg",
+      "price": 350,
+      "category": "pants"
+    },
+    {
+      "id": 8,
+      "name": "Chino Trousers Beige",
+      "image1": "images/product/pant3_front.jpg",
+      "image2": "images/product/pant3_back.jpg",
+      "price": 320,
+      "category": "pants"
+    },
+    {
+      "id": 9,
+      "name": "Relaxed Fit Jeans",
+      "image1": "images/product/pant4_front.jpg",
+      "image2": "images/product/pant4_back.jpg",
+      "price": 330,
+      "category": "pants"
+    },
+    {
+      "id": 10,
+      "name": "Dress Pants Grey",
+      "image1": "images/product/pant5_front.jpg",
+      "image2": "images/product/pant5_back.jpg",
+      "price": 380,
+      "category": "pants"
+    },
+    {
+      "id": 11,
+      "name": "Summer Casual Outfit",
+      "image1": "images/product/outfit1_front.jpg",
+      "image2": "images/product/outfit1_back.jpg",
+      "price": 450,
+      "category": "full outfit"
+    },
+    {
+      "id": 12,
+      "name": "Business Professional Outfit",
+      "image1": "images/product/outfit2_front.jpg",
+      "image2": "images/product/outfit2_back.jpg",
+      "price": 550,
+      "category": "full outfit"
+    },
+    {
+      "id": 13,
+      "name": "Weekend Adventure Outfit",
+      "image1": "images/product/outfit3_front.jpg",
+      "image2": "images/product/outfit3_back.jpg",
+      "price": 480,
+      "category": "full outfit"
+    },
+    {
+      "id": 14,
+      "name": "Evening Party Outfit",
+      "image1": "images/product/outfit4_front.jpg",
+      "image2": "images/product/outfit4_back.jpg",
+      "price": 520,
+      "category": "full outfit"
+    },
+    {
+      "id": 15,
+      "name": "Sporty Tracksuit Outfit",
+      "image1": "images/product/outfit5_front.jpg",
+      "image2": "images/product/outfit5_back.jpg",
+      "price": 420,
+      "category": "full outfit"
+    }
+  ]
