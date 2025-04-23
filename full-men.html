@@ -246,6 +246,8 @@
                     <li><a href="#" data-category="full">Full Outfit</a></li>
                     <li><a href="#" data-category="shirts">Shirts</a></li>
                     <li><a href="#" data-category="pants">Pants</a></li>
+                    <li><a href="#" data-category="coats">Coats</a></li>
+
                 </ol>
             </div>
         </div>
@@ -649,6 +651,9 @@
                     } else if (category === 'pants') {
                         filteredProducts = data.filter(product => product.category === 'pants' && product.gender === 'men');
                     }
+                    else if (category === 'coats') {
+                        filteredProducts = data.filter(product => product.category === 'coats' && product.gender === 'men');
+                    }
     
                     allProducts = filteredProducts;
                     renderPage(currentPage, allProducts);
@@ -799,7 +804,7 @@
                 link.addEventListener('click', function (event) {
                     event.preventDefault();
                     const category = this.getAttribute('data-category');
-                    if (category === 'shirts' || category === 'pants' || category === 'full') {
+                    if (category === 'shirts' || category === 'pants' || category === 'full' || category === 'coats') {
                         currentPage = 1;
                         fetchProducts(category);
                     }

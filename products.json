@@ -29,7 +29,7 @@
     "longDescription": "These stylish denim jeans feature a modern fit that is both comfortable and flattering. Made from high-quality denim, they are built to last and perfect for any casual occasion.",
     "sizes": ["S", "M", "L"],
     "colors": ["Dark Blue", "Light Blue", "Black"],
-    "category": "pants",
+    "category": "coats",
     "gender": "women",
     "imageGallery": [
       "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
@@ -48,7 +48,7 @@
     "longDescription": "Step out in style with these premium leather ankle boots. Crafted with attention to detail, they provide both a fashionable look and all-day comfort. Ideal for various outfits and occasions.",
     "colors": ["Black", "Brown"],
     "sizes": ["S", "M", "L"],
-    "category": "full-outfit",
+    "category": "coats",
     "gender": "men",
     "imageGallery": [
       "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
@@ -85,7 +85,7 @@
     "longDescription": "Elevate your style with this elegant silk scarf. Made from high-quality silk, it feels luxurious against the skin and adds a sophisticated touch to any ensemble. Available in various colors.",
     "colors": ["Ivory", "Navy", "Maroon"],
     "sizes": ["S", "M", "L"],
-    "category": "full-outfit",
+    "category": "coats",
     "gender": "men",
     "imageGallery": [
       "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
@@ -105,8 +105,8 @@
     "longDescription": "Carry your essentials in style with this practical and casual backpack. Featuring multiple compartments and durable material, it's ideal for everyday use, school, or short trips.",
     "colors": ["Grey", "Black", "Teal"],
     "sizes": ["S", "M", "L"],
-    "category": "pants",
-    "gender": "men",
+    "category": "coats",
+    "gender": "women",
     "imageGallery": [
       "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
       "images/clinic/medicine-uniform-healthcare-medical-workers-day-2025-03-25-09-14-44-utc (2).webp",
