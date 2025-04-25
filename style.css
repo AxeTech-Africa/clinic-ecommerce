@@ -2416,3 +2416,12 @@ p.error {
 
 
 
+  .main-logo {
+    width: 150px;
+    height: auto;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
