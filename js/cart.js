@@ -85,7 +85,7 @@
     wrapper.insertAdjacentHTML('beforeend', `
       <div class="cart-subtotal">Subtotal: <span>Ksh ${subtotal.toFixed(2)}</span></div>
       <div class="cart-check-btn">
-        <div class="view-cart"><a class="btn-def" href="cart.html">View Cart</a></div>
+        <div class="view-cart"><a class="btn-def" href="checkout.html">View Cart</a></div>
         <div class="check-btn"><a class="btn-def" href="checkout.html">Checkout</a></div>
       </div>
     `);
