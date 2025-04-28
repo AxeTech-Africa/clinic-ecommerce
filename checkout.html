@@ -406,10 +406,10 @@
                                                                 <div class="process-cart-total">
                                                                     <p>Total <span></span></p>
                                                                 </div>
-                                                                <div class="process-checkout-btn text-end">
+                                                                <!-- <div class="process-checkout-btn text-end">
                                                                     <a class="btn-def " href="#">Proceed To
                                                                         Checkout</a>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -470,12 +470,12 @@
                                                                 placeholder="Notes about your order Like Delivery Details."></textarea>
                                                         </div>
                                                     </form>
-                                                    <div class="text-end mt-20">
+                                                    <!-- <div class="text-end mt-20">
                                                         <a class="btn-def" href="#complete-order" role="tab"
                                                             data-bs-toggle="tab" aria-controls="complete-order">
                                                             Proceed To Complete-Order
                                                         </a>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -676,92 +676,106 @@
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
     <script>
-        ;(function () {
-            const WA_NUMBER = '254715699966';
+      ;(function () {
+    const WA_NUMBER = '254715699966';
 
-            function fetchCart() {
-                return (typeof getCart === 'function')
-                    ? getCart()
-                    : JSON.parse(localStorage.getItem('cart') || '[]');
+    function fetchCart() {
+        return (typeof getCart === 'function')
+            ? getCart()
+            : JSON.parse(localStorage.getItem('cart') || '[]');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('placeOrderBtn');
+        if (!btn) return;
+
+        btn.addEventListener('click', e => {
+            e.preventDefault();
+
+            // Validate billing
+            const fields = [
+                ['billingName', 'Full Name'],
+                ['billingEmail', 'Email'],
+                ['billingPhone', 'Phone'],
+                ['billingCountry', 'Country'],
+                ['billingAddress', 'Address'],
+                ['billingCity', 'Town/City']
+            ];
+            const missing = fields
+                .filter(([id]) => {
+                    const el = document.getElementById(id);
+                    return !el || !el.value.trim();
+                })
+                .map(([, label]) => label);
+
+            if (missing.length) {
+                alert('Please fill in billing details: ' + missing.join(', '));
+                document.querySelector('a[href="#checkout"]').click();
+                return;
             }
 
-            document.addEventListener('DOMContentLoaded', () => {
-                const btn = document.getElementById('placeOrderBtn');
-                if (!btn) return;
-
-                btn.addEventListener('click', e => {
-                    e.preventDefault();
-
-                    // Validate billing
-                    const fields = [
-                        ['billingName', 'Full Name'],
-                        ['billingEmail', 'Email'],
-                        ['billingPhone', 'Phone'],
-                        ['billingCountry', 'Country'],
-                        ['billingAddress', 'Address'],
-                        ['billingCity', 'Town/City']
-                    ];
-                    const missing = fields
-                        .filter(([id]) => {
-                            const el = document.getElementById(id);
-                            return !el || !el.value.trim();
-                        })
-                        .map(([, label]) => label);
-
-                    if (missing.length) {
-                        alert('Please fill in billing details: ' + missing.join(', '));
-                        document.querySelector('a[href="#checkout"]').click();
-                        return;
-                    }
-
-                    // Gather billing data
-                    const billing = {};
-                    fields.forEach(([id, label]) => {
-                        billing[label] = document.getElementById(id).value.trim();
-                    });
-                    billing.Notes = document.getElementById('orderNotes').value.trim();
-
-                    // Gather cart items
-                    const cart = fetchCart();
-                    if (!cart.length) {
-                        alert('Your cart is empty.');
-                        document.querySelector('a[href="#cart"]').click();
-                        return;
-                    }
-
-                    let grandTotal = 0;
-                    const items = cart.map((item, i) => {
-                        const itemTotal = item.price * item.quantity;
-                        grandTotal += itemTotal;
-                        return `${i + 1}. ${item.name} × ${item.quantity} @ Ksh ${item.price.toFixed(2)} = Ksh ${itemTotal.toFixed(2)}`;
-                    });
-
-                    // Build and encode message
-                    // Using semantically appropriate and common emojis
-                    let msg = '📦 *New Order*\n\n📋 *Billing Details*\n'; // Package, Clipboard
-                    Object.entries(billing).forEach(([k, v]) => {
-                        let icon = '';
-                        switch (k) {
-                            case 'Full Name': icon = '👤'; break; // Bust in Silhouette (standard person icon)
-                            case 'Email': icon = '✉️'; break; // Envelope (very common)
-                            case 'Phone': icon = '📞'; break; // Telephone Receiver (very common)
-                            case 'Country': icon = '🌍'; break; // Earth Globe (very common)
-                            case 'Address': icon = '🏠'; break; // House (very common)
-                            case 'Town/City': icon = '🏢'; break; // Office Building (common alternative to cityscape)
-                            case 'Notes': icon = '📝'; break; // Memo (most appropriate for notes)
-                        }
-                        msg += `${icon} ${k}: ${v}\n`;
-                    });
-                    msg += '\n🛍️ *Order Items*\n' + items.join('\n'); // Shopping Bags (very common)
-                    msg += `\n\n💰 *Grand Total: Ksh ${grandTotal.toFixed(2)}*`; // Money Bag (common money icon)
-
-                    window.open(
-                        `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=` + encodeURIComponent(msg),
-                        '_blank'
-                    );
-                });
+            // Gather billing data
+            const billing = {};
+            fields.forEach(([id, label]) => {
+                billing[label] = document.getElementById(id).value.trim();
             });
-        })();
+            billing.Notes = document.getElementById('orderNotes').value.trim();
+
+            // Gather cart items
+            const cart = fetchCart();
+            if (!cart.length) {
+                alert('Your cart is empty.');
+                document.querySelector('a[href="#cart"]').click();
+                return;
+            }
+
+            let grandTotal = 0;
+            const items = cart.map((item, i) => {
+                const itemTotal = item.price * item.quantity;
+                grandTotal += itemTotal;
+
+                // Add custom attributes like color, size, customSize to the message
+                let itemDetails = `${i + 1}. ${item.name} × ${item.quantity} @ Ksh ${item.price.toFixed(2)} = Ksh ${itemTotal.toFixed(2)}`;
+
+                if (item.color && item.color !== '#') {
+                    itemDetails += ` (Color: ${item.color})`;
+                }
+                if (item.size && item.size !== '#') {
+                    itemDetails += ` (Size: ${item.size})`;
+                }
+                if (item.customSize) {
+                    itemDetails += ` (Custom Size: ${item.customSize})`;
+                }
+
+                return itemDetails;
+            });
+
+            // Build and encode message
+            let msg = '📦 *New Order*\n\n📋 *Billing Details*\n'; // Package, Clipboard
+            Object.entries(billing).forEach(([k, v]) => {
+                let icon = '';
+                switch (k) {
+                    case 'Full Name': icon = '👤'; break; // Bust in Silhouette (standard person icon)
+                    case 'Email': icon = '✉️'; break; // Envelope (very common)
+                    case 'Phone': icon = '📞'; break; // Telephone Receiver (very common)
+                    case 'Country': icon = '🌍'; break; // Earth Globe (very common)
+                    case 'Address': icon = '🏠'; break; // House (very common)
+                    case 'Town/City': icon = '🏢'; break; // Office Building (common alternative to cityscape)
+                    case 'Notes': icon = '📝'; break; // Memo (most appropriate for notes)
+                }
+                msg += `${icon} ${k}: ${v}\n`;
+            });
+            msg += '\n🛍️ *Order Items*\n' + items.join('\n'); // Shopping Bags (very common)
+            msg += `\n\n💰 *Grand Total: Ksh ${grandTotal.toFixed(2)}*`; // Money Bag (common money icon)
+
+            window.open(
+                `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=` + encodeURIComponent(msg),
+                '_blank'
+            );
+        });
+    });
+})();
+
         </script>
         
     
