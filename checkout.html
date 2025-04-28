@@ -407,7 +407,7 @@
                                                                     <p>Total <span></span></p>
                                                                 </div>
                                                                 <div class="process-checkout-btn text-end">
-                                                                    <a class="btn-def btn2" href="#">Proceed To
+                                                                    <a class="btn-def " href="#">Proceed To
                                                                         Checkout</a>
                                                                 </div>
                                                             </div>
@@ -448,8 +448,8 @@
                                                                 class="selectpicker select-custom"
                                                                 data-live-search="true">
                                                                 <option>Kenya</option>
-                                                                <option>Uganda</option>
-                                                                <option>Tanzania</option>
+                                                                <!-- <option>Uganda</option>
+                                                                <option>Tanzania</option> -->
                                                             </select>
                                                         </div>
                                                         <div class="input-box mb-20">
@@ -709,7 +709,7 @@
                         .map(([, label]) => label);
 
                     if (missing.length) {
-                        alert('Please fill in: ' + missing.join(', '));
+                        alert('Please fill in billing details: ' + missing.join(', '));
                         document.querySelector('a[href="#checkout"]').click();
                         return;
                     }
