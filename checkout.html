@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Checkout || Clothing</title>
     <meta name="description"
@@ -676,7 +676,7 @@
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
     <script>
-        ; (function () {
+        ;(function () {
             const WA_NUMBER = '254715699966';
 
             function fetchCart() {
@@ -737,32 +737,34 @@
                     });
 
                     // Build and encode message
-                  // Build and encode message
-let msg = '🛒 *New Order*\n\n📋 *Billing Details*\n';
-Object.entries(billing).forEach(([k, v]) => {
-    let icon = '';
-    switch (k) {
-        case 'Full Name': icon = '👤'; break;
-        case 'Email': icon = '📧'; break;
-        case 'Phone': icon = '📞'; break;
-        case 'Country': icon = '🌍'; break;
-        case 'Address': icon = '🏠'; break;
-        case 'Town/City': icon = '🏙️'; break;
-        case 'Notes': icon = '📝'; break;
-    }
-    msg += `${icon} ${k}: ${v}\n`;
-});
-msg += '\n🛍️ *Order Items*\n' + items.join('\n');
-msg += `\n\n💵 *Grand Total: Ksh ${grandTotal.toFixed(2)}*`;
+                    // Using semantically appropriate and common emojis
+                    let msg = '📦 *New Order*\n\n📋 *Billing Details*\n'; // Package, Clipboard
+                    Object.entries(billing).forEach(([k, v]) => {
+                        let icon = '';
+                        switch (k) {
+                            case 'Full Name': icon = '👤'; break; // Bust in Silhouette (standard person icon)
+                            case 'Email': icon = '✉️'; break; // Envelope (very common)
+                            case 'Phone': icon = '📞'; break; // Telephone Receiver (very common)
+                            case 'Country': icon = '🌍'; break; // Earth Globe (very common)
+                            case 'Address': icon = '🏠'; break; // House (very common)
+                            case 'Town/City': icon = '🏢'; break; // Office Building (common alternative to cityscape)
+                            case 'Notes': icon = '📝'; break; // Memo (most appropriate for notes)
+                        }
+                        msg += `${icon} ${k}: ${v}\n`;
+                    });
+                    msg += '\n🛍️ *Order Items*\n' + items.join('\n'); // Shopping Bags (very common)
+                    msg += `\n\n💰 *Grand Total: Ksh ${grandTotal.toFixed(2)}*`; // Money Bag (common money icon)
 
                     window.open(
-                        `https://wa.me/${WA_NUMBER}?text=` + encodeURIComponent(msg),
+                        `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=` + encodeURIComponent(msg),
                         '_blank'
                     );
                 });
             });
         })();
-    </script>
+        </script>
+        
+    
 
 </body>
 
