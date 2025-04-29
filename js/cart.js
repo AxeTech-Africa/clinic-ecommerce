@@ -183,28 +183,52 @@
     tbody.appendChild(subRow);
   }
 
-  // ——— Event Setup ———
-  function setupAddToCart(){
-    const btn = document.getElementById('add-to-cart-btn');
-    if(!btn) return;
-    btn.addEventListener('click', function(e){
-      e.preventDefault();
-      const id = parseInt(new URLSearchParams(window.location.search).get('id'));
-      const name = document.getElementById('product-name').textContent.trim();
-      const price = parseFloat(
-        document.getElementById('product-price-new')
-          .textContent.replace(/[^0-9\.]/g,'')
-      );
-      const image = document.getElementById('product-image').src;
-      const color = document.getElementById('input-sort-color').value;
-      const size = document.getElementById('input-sort-size').value;
-      const customSize = document.getElementById('custom-size-input').value.trim();
-      const quantity = parseInt(document.getElementById('quantity-input').value) || 1;
-      addToCart({id,name,price,image,color,size,customSize,quantity});
-      updateHeaderCart();
-      alert('Added to cart!');
-    });
-  }
+// ——— Event Setup ———
+// ——— Event Setup ———
+function setupAddToCart(){
+  const btn = document.getElementById('add-to-cart-btn');
+  if(!btn) return;
+
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+
+    const id = parseInt(new URLSearchParams(window.location.search).get('id'));
+    const name = document.getElementById('product-name').textContent.trim();
+    const price = parseFloat(
+      document.getElementById('product-price-new')
+        .textContent.replace(/[^0-9\.]/g,'')
+    );
+    const image = document.getElementById('product-image').src;
+    const color = document.getElementById('input-sort-color').value;
+    const size = document.getElementById('input-sort-size').value;
+    const customSize = document.getElementById('custom-size-input').value.trim();
+    const quantity = parseInt(document.getElementById('quantity-input').value) || 1;
+    addToCart({id,name,price,image,color,size,customSize,quantity});
+    updateHeaderCart();
+
+    // Create a simple "Added to Cart" message
+    const message = document.createElement('div');
+    message.textContent = 'Added to Cart!';
+    message.style.position = 'fixed';
+    message.style.bottom = '570px';
+    message.style.right = '20%';
+    message.style.transform = 'translateX(-50%)';
+    message.style.padding = '10px';
+    message.style.backgroundColor = 'green';
+    message.style.color = 'white';
+    message.style.borderRadius = '5px';
+    message.style.fontSize = '12px';
+    message.style.zIndex = '9999';
+    document.body.appendChild(message);
+
+    // Hide the message after 2 seconds
+    setTimeout(function() {
+      message.style.display = 'none';
+    }, 2000);
+  });
+}
+
+
 
   function setupCartListeners(){
     document.body.addEventListener('click', function(e){
