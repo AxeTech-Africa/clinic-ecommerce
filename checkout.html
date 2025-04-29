@@ -263,12 +263,12 @@
                                                 aria-controls="cart" role="tab" data-bs-toggle="tab"><span>01</span>
                                                 Shopping
                                                 cart</a></li>
-                                        <li role="presentation"><a class=" shadow-box" href="#checkout"
+                                        <!-- <li role="presentation"><a class=" shadow-box" href="#checkout"
                                                 aria-controls="checkout" role="tab"
-                                                data-bs-toggle="tab"><span>02</span>Checkout</a></li>
+                                                data-bs-toggle="tab"><span>02</span>Checkout</a></li> -->
                                         <li role="presentation"><a class="shadow-box" href="#complete-order"
                                                 aria-controls="complete-order" role="tab"
-                                                data-bs-toggle="tab"><span>03</span>
+                                                data-bs-toggle="tab"><span>02</span>
                                                 complete-order</a></li>
                                     </ul>
                                 </div>
@@ -366,9 +366,11 @@
                                                                 <div class="update-continue-btn text-end pb-20">
                                                                     <!-- <a href="#" class="btn-def btn2">Update Cart</a> -->
                                                                     <!-- <a href="#" class="btn-def ">Continue Shopping</a> -->
-                                                                    <a href="full-women.html" class="btn-def btn2 me-2">Shop
+                                                                    <a href="full-women.html"
+                                                                        class="btn-def btn2 me-2">Shop
                                                                         Women</a>
-                                                                    <a href="full-men.html" class="btn-def btn2">Shop Men</a>
+                                                                    <a href="full-men.html" class="btn-def btn2">Shop
+                                                                        Men</a>
 
                                                                 </div>
                                                                 <!-- <div class="coupn-area">
@@ -420,72 +422,75 @@
                                     </div>
 
 
-                                    <!-- BILLING TAB -->
-                                    <div role="tabpanel" class="tab-pane fade" id="checkout">
-                                        <div class="checkout-area">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <h2>Billing Details</h2>
-                                                    <form>
-                                                        <div class="input-box mb-20">
-                                                            <label>Full Name <em>*</em></label>
-                                                            <input id="billingName" type="text" class="info"
-                                                                placeholder="Full Name">
-                                                        </div>
-                                                        <div class="input-box mb-20">
-                                                            <label>Email Address <em>*</em></label>
-                                                            <input id="billingEmail" type="email" class="info"
-                                                                placeholder="Your Email">
-                                                        </div>
-                                                        <div class="input-box mb-20">
-                                                            <label>Phone Number <em>*</em></label>
-                                                            <input id="billingPhone" type="text" class="info"
-                                                                placeholder="Phone Number">
-                                                        </div>
-                                                        <div class="input-box mb-20">
-                                                            <label>Country <em>*</em></label>
-                                                            <select id="billingCountry"
-                                                                class="selectpicker select-custom"
-                                                                data-live-search="true">
-                                                                <option>Kenya</option>
-                                                                <!-- <option>Uganda</option>
-                                                                <option>Tanzania</option> -->
-                                                            </select>
-                                                        </div>
-                                                        <div class="input-box mb-20">
-                                                            <label>Address <em>*</em></label>
-                                                            <input id="billingAddress" type="text" class="info mb-10"
-                                                                placeholder="Street Address">
-                                                            <input id="billingAddress2" type="text" class="info mt10"
-                                                                placeholder="Apt, suite, etc. (optional)">
-                                                        </div>
-                                                        <div class="input-box mb-20">
-                                                            <label>Town/City <em>*</em></label>
-                                                            <input id="billingCity" type="text" class="info"
-                                                                placeholder="Town/City">
-                                                        </div>
-                                                        <div class="input-box mb-20">
-                                                            <label>Order Notes</label>
-                                                            <textarea id="orderNotes" class="area-tex"
-                                                                placeholder="Notes about your order Like Delivery Details."></textarea>
-                                                        </div>
-                                                    </form>
-                                                    <!-- <div class="text-end mt-20">
-                                                        <a class="btn-def" href="#complete-order" role="tab"
-                                                            data-bs-toggle="tab" aria-controls="complete-order">
-                                                            Proceed To Complete-Order
-                                                        </a>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Billing Tab End-->
-
 
                                     <!-- COMPLETE-ORDER TAB -->
                                     <div role="tabpanel" class="tab-pane fade" id="complete-order">
+
                                         <div class="checkout-payment-area">
+                                            <!-- Toggle Billing Details -->
+                                            <div class="mb-3">
+                                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#billingCollapse" aria-expanded="false"
+                                                    aria-controls="billingCollapse">
+                                                    Fill  Billing Details
+                                                </button>
+                                            </div>
+
+                                            <!-- Collapsible Billing Form -->
+                                            <div class="collapse mb-4" id="billingCollapse">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <h4>Billing Details</h4>
+                                                        <form id="billingForm">
+                                                            <div class="input-box mb-20">
+                                                                <label>Full Name <em>*</em></label>
+                                                                <input id="billingName" type="text"
+                                                                    class="info required-field" placeholder="Full Name">
+                                                            </div>
+                                                            <div class="input-box mb-20">
+                                                                <label>Email Address <em>*</em></label>
+                                                                <input id="billingEmail" type="email"
+                                                                    class="info required-field"
+                                                                    placeholder="Your Email">
+                                                            </div>
+                                                            <div class="input-box mb-20">
+                                                                <label>Phone Number <em>*</em></label>
+                                                                <input id="billingPhone" type="text"
+                                                                    class="info required-field"
+                                                                    placeholder="Phone Number">
+                                                            </div>
+                                                            <div class="input-box mb-20">
+                                                                <label>Country <em>*</em></label>
+                                                                <select id="billingCountry"
+                                                                    class="selectpicker select-custom required-field"
+                                                                    data-live-search="true">
+                                                                    <option value="">Select Country</option>
+                                                                    <option>Kenya</option>
+
+                                                                </select>
+                                                            </div>
+                                                            <div class="input-box mb-20">
+                                                                <label>Address <em>*</em></label>
+                                                                <input id="billingAddress" type="text"
+                                                                    class="info required-field mb-10"
+                                                                    placeholder="Street Address">
+                                                            </div>
+                                                            <div class="input-box mb-20">
+                                                                <label>Town/City <em>*</em></label>
+                                                                <input id="billingCity" type="text"
+                                                                    class="info required-field" placeholder="Town/City">
+                                                            </div>
+                                                            <!-- Order Notes (optional) -->
+                                                            <div class="col-12 mb-3">
+                                                                <textarea id="orderNotes" rows="3" class="form-control"
+                                                                    placeholder="Order Notes (optional)"></textarea>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <h3>Your order</h3>
                                             <form class="checkout-area table">
                                                 <div class="table-responsive">
@@ -518,7 +523,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                     <!-- COMPLETE-ORDER TAB end -->
+                                    <!-- COMPLETE-ORDER TAB end -->
 
                                 </div>
                                 <!-- /.tab-content -->
@@ -676,109 +681,119 @@
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
     <script>
-      ;(function () {
-    const WA_NUMBER = '254715699966';
+        ; (function () {
+            const WA_NUMBER = '254715699966';
 
-    function fetchCart() {
-        return (typeof getCart === 'function')
-            ? getCart()
-            : JSON.parse(localStorage.getItem('cart') || '[]');
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('placeOrderBtn');
-        if (!btn) return;
-
-        btn.addEventListener('click', e => {
-            e.preventDefault();
-
-            // Validate billing
-            const fields = [
-                ['billingName', 'Full Name'],
-                ['billingEmail', 'Email'],
-                ['billingPhone', 'Phone'],
-                ['billingCountry', 'Country'],
-                ['billingAddress', 'Address'],
-                ['billingCity', 'Town/City']
-            ];
-            const missing = fields
-                .filter(([id]) => {
-                    const el = document.getElementById(id);
-                    return !el || !el.value.trim();
-                })
-                .map(([, label]) => label);
-
-            if (missing.length) {
-                alert('Please fill in billing details: ' + missing.join(', '));
-                document.querySelector('a[href="#checkout"]').click();
-                return;
+            function fetchCart() {
+                return (typeof getCart === 'function')
+                    ? getCart()
+                    : JSON.parse(localStorage.getItem('cart') || '[]');
             }
 
-            // Gather billing data
-            const billing = {};
-            fields.forEach(([id, label]) => {
-                billing[label] = document.getElementById(id).value.trim();
+            document.addEventListener('DOMContentLoaded', () => {
+                const btn = document.getElementById('placeOrderBtn');
+                if (!btn) return;
+
+                btn.addEventListener('click', e => {
+                    e.preventDefault();
+
+                    // Validate billing
+                    const fields = [
+                        ['billingName', 'Full Name'],
+                        ['billingEmail', 'Email'],
+                        ['billingPhone', 'Phone'],
+                        ['billingCountry', 'Country'],
+                        ['billingAddress', 'Address'],
+                        ['billingCity', 'Town/City']
+                    ];
+                    const missingFields = [];
+
+                    fields.forEach(([id]) => {
+                        const el = document.getElementById(id);
+                        if (!el || !el.value.trim()) {
+                            if (el) {
+                                el.style.border = '1px solid red';
+                                missingFields.push(el);
+                            }
+                        } else {
+                            el.style.border = '';
+                        }
+                    });
+
+                    if (missingFields.length) {
+                        alert('Please fill in all billing details.');
+                        // Scroll to the first missing field
+                        missingFields[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        return;
+                    }
+
+                    // Gather billing data
+                    const billing = {};
+                    fields.forEach(([id, label]) => {
+                        const el = document.getElementById(id);
+                        el.style.border = '';
+                        billing[label] = el.value.trim();
+                    });
+                    billing.Notes = document.getElementById('orderNotes')?.value.trim() || '';
+
+                    // Gather cart items
+                    const cart = fetchCart();
+                    if (!cart.length) {
+                        alert('Your cart is empty.');
+                        document.querySelector('a[href="#cart"]').click();
+                        return;
+                    }
+
+                    let grandTotal = 0;
+                    const items = cart.map((item, i) => {
+                        const itemTotal = item.price * item.quantity;
+                        grandTotal += itemTotal;
+
+                        let itemDetails = `${i + 1}. ${item.name} × ${item.quantity} @ Ksh ${item.price.toFixed(2)} = Ksh ${itemTotal.toFixed(2)}`;
+
+                        if (item.color && item.color !== '#') {
+                            itemDetails += ` (Color: ${item.color})`;
+                        }
+                        if (item.size && item.size !== '#') {
+                            itemDetails += ` (Size: ${item.size})`;
+                        }
+                        if (item.customSize) {
+                            itemDetails += ` (Custom Size: ${item.customSize})`;
+                        }
+
+                        return itemDetails;
+                    });
+
+                    // Build and encode message
+                    let msg = '📦 *New Order*\n\n📋 *Billing Details*\n';
+                    Object.entries(billing).forEach(([k, v]) => {
+                        let icon = '';
+                        switch (k) {
+                            case 'Full Name': icon = '👤'; break;
+                            case 'Email': icon = '✉️'; break;
+                            case 'Phone': icon = '📞'; break;
+                            case 'Country': icon = '🌍'; break;
+                            case 'Address': icon = '🏠'; break;
+                            case 'Town/City': icon = '🏢'; break;
+                            case 'Notes': icon = '📝'; break;
+                        }
+                        msg += `${icon} ${k}: ${v}\n`;
+                    });
+                    msg += '\n🛍️ *Order Items*\n' + items.join('\n');
+                    msg += `\n\n💰 *Grand Total: Ksh ${grandTotal.toFixed(2)}*`;
+
+                    window.open(
+                        `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=` + encodeURIComponent(msg),
+                        '_blank'
+                    );
+                });
             });
-            billing.Notes = document.getElementById('orderNotes').value.trim();
+        })();
+    </script>
 
-            // Gather cart items
-            const cart = fetchCart();
-            if (!cart.length) {
-                alert('Your cart is empty.');
-                document.querySelector('a[href="#cart"]').click();
-                return;
-            }
 
-            let grandTotal = 0;
-            const items = cart.map((item, i) => {
-                const itemTotal = item.price * item.quantity;
-                grandTotal += itemTotal;
 
-                // Add custom attributes like color, size, customSize to the message
-                let itemDetails = `${i + 1}. ${item.name} × ${item.quantity} @ Ksh ${item.price.toFixed(2)} = Ksh ${itemTotal.toFixed(2)}`;
 
-                if (item.color && item.color !== '#') {
-                    itemDetails += ` (Color: ${item.color})`;
-                }
-                if (item.size && item.size !== '#') {
-                    itemDetails += ` (Size: ${item.size})`;
-                }
-                if (item.customSize) {
-                    itemDetails += ` (Custom Size: ${item.customSize})`;
-                }
-
-                return itemDetails;
-            });
-
-            // Build and encode message
-            let msg = '📦 *New Order*\n\n📋 *Billing Details*\n'; // Package, Clipboard
-            Object.entries(billing).forEach(([k, v]) => {
-                let icon = '';
-                switch (k) {
-                    case 'Full Name': icon = '👤'; break; // Bust in Silhouette (standard person icon)
-                    case 'Email': icon = '✉️'; break; // Envelope (very common)
-                    case 'Phone': icon = '📞'; break; // Telephone Receiver (very common)
-                    case 'Country': icon = '🌍'; break; // Earth Globe (very common)
-                    case 'Address': icon = '🏠'; break; // House (very common)
-                    case 'Town/City': icon = '🏢'; break; // Office Building (common alternative to cityscape)
-                    case 'Notes': icon = '📝'; break; // Memo (most appropriate for notes)
-                }
-                msg += `${icon} ${k}: ${v}\n`;
-            });
-            msg += '\n🛍️ *Order Items*\n' + items.join('\n'); // Shopping Bags (very common)
-            msg += `\n\n💰 *Grand Total: Ksh ${grandTotal.toFixed(2)}*`; // Money Bag (common money icon)
-
-            window.open(
-                `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=` + encodeURIComponent(msg),
-                '_blank'
-            );
-        });
-    });
-})();
-
-        </script>
-        
-    
 
 </body>
 
