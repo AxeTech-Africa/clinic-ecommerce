@@ -272,3 +272,30 @@ function setupAddToCart(){
   });
 
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.getElementById('burger-toggle').addEventListener('click', function () {
+    const menu = document.querySelector('.mobile-menu-area');
+    menu.classList.toggle('active');
+  });
