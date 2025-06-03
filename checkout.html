@@ -26,6 +26,7 @@
     <!-- User style -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/color/skin-default.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
 
     <!-- Modernizr JS -->
@@ -429,10 +430,10 @@
                                         <div class="checkout-payment-area">
                                             <!-- Toggle Billing Details -->
                                             <div class="mb-3">
-                                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse"
                                                     data-bs-target="#billingCollapse" aria-expanded="false"
                                                     aria-controls="billingCollapse">
-                                                    Fill  Billing Details
+                                                    Fill in Billing Details
                                                 </button>
                                             </div>
 
@@ -509,12 +510,13 @@
                                             </form>
                                             <div class="payment-section mt-20 clearfix">
                                                 <form>
-                                                    <div class="pay-type-total">
-                                                        <div class="pay-type">
-                                                            <input type="radio" id="pay-wa" name="pay" checked>
-                                                            <label for="pay-wa">Mpesa Whatsapp Checkout</label>
-                                                        </div>
-                                                    </div>
+                                                    <div class="pay-type">
+  <span>
+    Mpesa Whatsapp Checkout 
+    <i class="fab fa-whatsapp" style="color:#25D366; margin-left: 5px;"></i>
+  </span>
+</div>
+
                                                     <div class="input-box mt-20 text-end">
                                                         <a id="placeOrderBtn" class="btn-def btn2" href="#">Place
                                                             order</a>
@@ -537,105 +539,104 @@
     </div>
     <!--cart-checkout-area end-->
 
-    <!-- footer area start-->
-    <div class="footer-area ptb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4">
-                    <div class="single-footer contact-us">
-                        <div class="footer-title uppercase">
-                            <h5>Contact US</h5>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="contact-icon"> <i class="zmdi zmdi-pin-drop"></i> </div>
-                                <div class="contact-text">
-                                    <p>Address: Your address goes here</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact-icon"> <i class="zmdi zmdi-email-open"></i> </div>
-                                <div class="contact-text">
-                                    <p><span><a href="mailto://demo@example.com">demo@example.com</a></span>
-                                        <span><a href="mailto://info@example.com">info@example.com</a></span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact-icon"> <i class="zmdi zmdi-phone-paused"></i> </div>
-                                <div class="contact-text">
-                                    <p><a href="tel://01234567890">01234567890</a> <a
-                                            href="tel://01234567890">01234567890</a></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4">
-                    <div class="single-footer informaton-area">
-                        <div class="footer-title uppercase">
-                            <h5>Quick Links</h5>
-                        </div>
-                        <div class="informatoin">
+     <!-- footer area start-->
+        <div class="footer-area ptb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4">
+                        <div class="single-footer contact-us">
+                            <div class="footer-title uppercase">
+                                <h5>Contact US</h5>
+                            </div>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <div class="contact-icon"> <i class="zmdi zmdi-pin-drop"></i> </div>
+                                    <div class="contact-text">
+                                        <p>Address: Your address goes here</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"> <i class="zmdi zmdi-email-open"></i> </div>
+                                    <div class="contact-text">
+                                        <p><span><a href="mailto://demo@example.com">demo@example.com</a></span>
+                                            <span><a href="mailto://info@example.com">info@example.com</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"> <i class="zmdi zmdi-phone-paused"></i> </div>
+                                    <div class="contact-text">
+                                        <p><a href="tel://01234567890">01234567890</a> <a
+                                                href="tel://01234567890">01234567890</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4">
+                        <div class="single-footer informaton-area">
+                            <div class="footer-title uppercase">
+                                <h5>Quick Links</h5>
+                            </div>
+                            <div class="informatoin">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
                                     <li><a href="full-men.html">Men</a></li>
                                     <li><a href="full-women.html">Women</a></li>
                                     <li><a href="about-us.html">About</a></li>
                                     <li><a href="contact-us.html">Contact</a></li>
-
-                            </ul>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-4 offset-xl-1">
-                    <div class="single-footer newslatter-area">
-                        <div class="footer-title uppercase">
-                            <h5>Get Newsletters</h5>
-                        </div>
-                        <div class="newslatter">
-                            <form action="#" method="post">
-                                <div class="input-box pos-rltv">
-                                    <input placeholder="Type Your Email hear" type="text">
-                                    <a href="#">
-                                        <i class="zmdi zmdi-arrow-right"></i>
-                                    </a>
+                   
+                    <div class="col-xl-3 col-lg-3 col-md-4 offset-xl-1">
+                        <div class="single-footer newslatter-area">
+                            <div class="footer-title uppercase">
+                                <h5>Get Newsletters</h5>
+                            </div>
+                            <div class="newslatter">
+                                <form action="#" method="post">
+                                    <div class="input-box pos-rltv">
+                                        <input placeholder="Type Your Email hear" type="text">
+                                        <a href="#">
+                                            <i class="zmdi zmdi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </form>
+                                <div class="social-icon socile-icon-style-3 mt-40">
+                                    <div class="footer-title uppercase">
+                                        <h5>Social Network</h5>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-google"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                    </ul>
                                 </div>
-                            </form>
-                            <div class="social-icon socile-icon-style-3 mt-40">
-                                <div class="footer-title uppercase">
-                                    <h5>Social Network</h5>
-                                </div>
-                                <ul>
-                                    <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-google"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--footer area start-->
+        <!--footer area start-->
 
-    <!--footer bottom area start-->
-    <div class="footer-bottom global-table">
-        <div class="global-row">
-            <div class="global-cell">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="copyrigth text-center">
-                                © 2025 <span class="text-capitalize">clothing</span> | Powered by <a
-                                    href="https://www.axetech.africa/">AxeTech Africa</a>
-                            </p>
-                        </div>
-                        <!-- <div class="col-md-6">
+        <!--footer bottom area start-->
+        <div class="footer-bottom global-table">
+            <div class="global-row">
+                <div class="global-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="copyrigth text-center">
+                                    © 2025 <span class="text-capitalize">clothing</span> | Powered by <a href="https://www.axetech.africa/">AxeTech Africa</a>
+                                </p>
+                            </div>
+                            <!-- <div class="col-md-6">
                                 <ul class="payment-support text-end">
                                     <li>
                                         <a href="#"><img src="images/icons/pay1.png" alt="" /></a>
@@ -654,12 +655,12 @@
                                     </li>
                                 </ul>
                             </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--footer bottom area end-->
+        <!--footer bottom area end-->
 
     </div>
     <!-- Body main wrapper end -->
